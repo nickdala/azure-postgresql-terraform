@@ -1,0 +1,31 @@
+{
+	"name": "azure-postgresql-terraform",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "jammy"
+		}
+	},
+	"remoteUser": "vscode",
+	"containerEnv": {
+	},
+	"features": {
+		// https://containers.dev/features
+		"ghcr.io/devcontainers/features/azure-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/terraform:1": {}
+	},
+	//"forwardPorts": [ ],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				// Terraform
+				"ms-azuretools.vscode-azureterraform"
+			]
+		}
+	},
+	"hostRequirements": {
+		"cpus": 2
+	}
+}
