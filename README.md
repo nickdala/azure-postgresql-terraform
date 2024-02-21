@@ -67,3 +67,7 @@ To remove the resources:
 ```shell
 terraform destroy
 ```
+
+## Issue
+
+Link to the [issue](https://github.com/hashicorp/terraform-provider-azurerm/issues/24949).
